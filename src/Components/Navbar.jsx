@@ -17,7 +17,7 @@ const Navbar = () => {
           <img src={SearchIcon} alt="searchIcon" />
         </button>
       </div>
-      <Button className={navbar.button}>Give Feedback</Button>
+      <Button className={navbar.button}>Give FeedBack</Button>
     </div>
   );
 };
