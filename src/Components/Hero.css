@@ -1,0 +1,23 @@
+.HeroContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+/* .HeroContainer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 799px;
+  height: 212px;
+  
+} */
+.heroText {
+  width: 556px;
+  height: 150px;
+}
+.heroImg {
+  width: 212px;
+  height: 212px;
+}
