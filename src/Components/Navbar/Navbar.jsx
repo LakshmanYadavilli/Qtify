@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../assests/logo.png";
-import SearchIcon from "../assests/Search icon.jpg";
+import logo from "../../assests/logo.png";
+import SearchIcon from "../../assests/Search icon.jpg";
 import navbar from "./Navbar.module.css";
-import Button from "./Button";
+import Button from "../Button";
 
 const Navbar = () => {
   return (

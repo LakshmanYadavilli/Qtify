@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import HeroImg from "../assests/vibrating-headphone.png";
+import HeroImg from "../../assests/vibrating-headphone.png";
 
 const Hero = () => {
   return (

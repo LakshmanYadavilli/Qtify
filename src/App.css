@@ -2,3 +2,6 @@
   --color-primary: #34c94b;
   --color-black: #121212;
 }
+body {
+  background-color: #121212;
+}
