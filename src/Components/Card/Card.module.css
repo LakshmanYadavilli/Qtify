@@ -19,13 +19,14 @@
   border-radius: 10px 10px 0px 0px;
 }
 .cardFollows {
-  height: 25%;
+  height: 23px;
   width: 71px;
   padding: 4px 8px 4px 8px;
   border-radius: 10px;
   background-color: #121212;
   margin-left: 10px;
   text-align: center;
+  margin-top: 10px;
 }
 .follows {
   width: 55px;

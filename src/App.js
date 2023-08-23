@@ -4,7 +4,9 @@ import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import { TopSongsApi } from "./Components/Api/Api";
 import { useEffect, useState } from "react";
-import Card from "./Components/Card/Card";
+// import Card from "./Components/Card/Card";
+import Section from "./Components/Section/Section";
+import styles from "./App.module.css";
 
 function App() {
   const [data, setData] = useState([]);
@@ -20,9 +22,12 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      {data.slice(0, 1).map((i) => (
+      <div className={styles.sectionWrapper}>
+        <Section title={"Top Albums"} type={"album"} data={data} />
+      </div>
+      {/* {data.slice(0, 1).map((i) => (
         <Card data={i} key={i.id} />
-      ))}
+      ))} */}
     </div>
   );
 }
