@@ -7,3 +7,8 @@ export const TopSongsApi = async () => {
   //   console.log(res);
   return res;
 };
+
+export const newSongsApi = async () => {
+  let res = await axios.get(`${url}/albums/new`);
+  return res;
+};
