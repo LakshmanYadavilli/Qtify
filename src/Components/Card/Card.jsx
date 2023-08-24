@@ -1,23 +1,30 @@
 import React from "react";
 import style from "./Card.module.css";
+import { Tooltip } from "@mui/material";
 
 const Card = ({ data }) => {
-  let { follows, title, image } = data;
-  // console.log({ data });
+  let { follows, title, image, songs, likes } = data;
+  console.log({ data });
   return (
-    <div className={style.card}>
-      <div className={style.cardContainer}>
-        <img className={style.cardImg} src={image} alt={title} />
-        <div>
-          <div className={style.cardFollows}>
-            <p className={style.follows}>{follows} Follows</p>
+    <Tooltip title={songs && songs.length} placement="top" arrow>
+      <div className={style.card}>
+        <div className={style.cardContainer}>
+          <img className={style.cardImg} src={image} alt={title} />
+          <div>
+            <div className={style.cardFollows}>
+              {likes ? (
+                <p className={style.follows}>{likes} Likes</p>
+              ) : (
+                <p className={style.follows}>{follows} Follows</p>
+              )}
+            </div>
           </div>
         </div>
+        <div className={style.cardTitle}>
+          <h1>{title}</h1>
+        </div>
       </div>
-      <div className={style.cardTitle}>
-        <h1>{title}</h1>
-      </div>
-    </div>
+    </Tooltip>
   );
 };
 
