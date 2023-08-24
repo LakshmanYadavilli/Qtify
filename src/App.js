@@ -13,6 +13,7 @@ import { useEffect, useState, React } from "react";
 // import Card from "./Components/Card/Card";
 import Section from "./Components/Section/Section";
 import styles from "./App.module.css";
+import Accordian from "./Components/Accordian/Accordian";
 
 function App() {
   const [data, setData] = useState([]);
@@ -101,6 +102,12 @@ function App() {
           )}
         </Section>
       </div>
+      <div className="accordianContainer">
+        <h1>FAQs</h1>
+
+        <Accordian />
+      </div>
+
       {/* {data.slice(0, 1).map((i) => (
         <Card data={i} key={i.id} />
       ))} */}

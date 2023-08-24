@@ -14,9 +14,11 @@ const Section = ({ title, data, type, children }) => {
       <div className={styles.header}>
         <h3>{title}</h3>
 
-        <h4 className={styles.toggleText} onClick={handleToggle}>
-          {carouselToggle ? "show All" : "collapse All"}
-        </h4>
+        {!children && (
+          <h4 className={styles.toggleText} onClick={handleToggle}>
+            {carouselToggle ? "show All" : "collapse All"}
+          </h4>
+        )}
       </div>
       {children !== undefined && children}
       <br />
