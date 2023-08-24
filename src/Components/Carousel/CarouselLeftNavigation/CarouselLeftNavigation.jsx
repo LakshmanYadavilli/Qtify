@@ -10,7 +10,7 @@ const CarouselLeftNavigation = () => {
       setIsBegining(swiper.isBeginning);
     });
   }, []);
-  console.log({ isBegining });
+  // console.log({ isBegining });
   return (
     <div className={styles.leftNavigation}>
       {!isBegining && <LeftArrow onClick={() => swiper.slidePrev()} />}

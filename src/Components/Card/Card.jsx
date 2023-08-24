@@ -3,7 +3,7 @@ import style from "./Card.module.css";
 
 const Card = ({ data }) => {
   let { follows, title, image } = data;
-  console.log({ data });
+  // console.log({ data });
   return (
     <div className={style.card}>
       <div className={style.cardContainer}>

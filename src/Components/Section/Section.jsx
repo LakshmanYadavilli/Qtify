@@ -4,7 +4,7 @@ import Card from "../Card/Card";
 import styles from "./Section.module.css";
 import Carousel from "../Carousel/Carousel";
 
-const Section = ({ title, data, type }) => {
+const Section = ({ title, data, type, children }) => {
   const [carouselToggle, setCarouselToggle] = useState(true);
   const handleToggle = () => {
     setCarouselToggle(!carouselToggle);
@@ -13,10 +13,13 @@ const Section = ({ title, data, type }) => {
     <div>
       <div className={styles.header}>
         <h3>{title}</h3>
+
         <h4 className={styles.toggleText} onClick={handleToggle}>
           {carouselToggle ? "show All" : "collapse All"}
         </h4>
       </div>
+      {children !== undefined && children}
+      <br />
       {data?.length === 0 ? (
         // <CircularProgress />
         <></>

@@ -12,3 +12,13 @@ export const newSongsApi = async () => {
   let res = await axios.get(`${url}/albums/new`);
   return res;
 };
+
+export const genresApi = async () => {
+  let res = await axios.get(`${url}/genres`);
+  return res;
+};
+
+export const allSongsApi = async () => {
+  let res = await axios.get(`${url}/songs`);
+  return res;
+};
